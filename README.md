@@ -1,2 +1,5 @@
-# docker-img-artifactory
-Ce dépôt contient une image de l'application artifactory
+# ARTIFACTORY
+
+## Description
+
+JFrog Artifactory is the only Universal Repository Manager supporting all major packaging formats, build tools and CI servers.
