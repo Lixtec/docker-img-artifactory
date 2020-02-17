@@ -1,4 +1,4 @@
-ARG ARTIFACTORY_VERSION=6.3.3
+ARG ARTIFACTORY_VERSION
 FROM openjdk:8
 
 MAINTAINER ludovic.terral
@@ -14,7 +14,7 @@ ENV ARTIFACTORY_USER_NAME=artifactory \
     POSTGRESQL_VERSION=9.4.1212
 
 # Config proxy apt
-RUN apt update -y && apt upgrade -y && apt install -y nano gosu && apt autoremove -y 
+RUN echo "version à installer :${ARTIFACTORY_VERSION}" && apt update -y && apt upgrade -y && apt install -y nano gosu && apt autoremove -y 
 
 
 # Fetch and install Artifactory OSS war archive.
